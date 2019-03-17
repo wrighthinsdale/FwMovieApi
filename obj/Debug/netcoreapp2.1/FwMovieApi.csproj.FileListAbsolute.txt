@@ -1,0 +1,14 @@
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\bin\Debug\netcoreapp2.1\FwMovieApi.deps.json
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\bin\Debug\netcoreapp2.1\FwMovieApi.runtimeconfig.json
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\bin\Debug\netcoreapp2.1\FwMovieApi.runtimeconfig.dev.json
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\bin\Debug\netcoreapp2.1\FwMovieApi.dll
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\bin\Debug\netcoreapp2.1\FwMovieApi.pdb
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.csprojAssemblyReference.cache
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.csproj.CoreCompileInputs.cache
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.RazorAssemblyInfo.cache
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.RazorAssemblyInfo.cs
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.AssemblyInfoInputs.cache
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.AssemblyInfo.cs
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.RazorTargetAssemblyInfo.cache
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.dll
+C:\Users\jwrig\source\repos\FwMovieApi\FwMovieApi\obj\Debug\netcoreapp2.1\FwMovieApi.pdb
