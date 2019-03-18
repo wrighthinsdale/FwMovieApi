@@ -10,6 +10,6 @@ namespace FwMovieApi.Models {
         public int yearOfRelease { get; set; }
         public int runningTime { get; set; }
         public string genres { get; set; }
-        public float averageRating { get; set; }
+        public double averageRating { get; set; }
     }
 }

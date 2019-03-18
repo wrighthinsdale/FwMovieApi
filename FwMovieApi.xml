@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FwMovieApi</name>
+    </assembly>
+    <members>
+        <member name="M:FwMovieApi.Controllers.MovieController.SearchMovies(FwMovieApi.Models.MovieSearchItem)">
+            <summary>
+            Search the in-memory database using a combination of title, yearOfRelease and genre values. 
+            </summary>
+            <remarks><b>title</b> is case-insensitve. Values must be longer than one letter in length, and simple words (a, an, and, the, or) are not allowed.
+            <b>yearOfRelease</b> must be a four-digit integer greater than 1900, and less than 2050.
+            <b>genres</b> are entered in a single comma-separated list (case-insensitive). Any genre entered this way will be returned (so, entering 'Comedy,Drama' will return all movies that are either comedies, or dramas, or both. Possible genres here are: 'Action', 'Thriller, 'Drama', 'Western', 'Historical', 'Romance', 'Animation', 'Horror', 'Science Fiction', and 'Comedy'.</remarks>
+            <returns></returns>
+        </member>
+        <member name="M:FwMovieApi.Controllers.MovieController.UpdateMovieRating(FwMovieApi.Models.MovieUserRating)">
+            <summary>
+            Updates the moving rating for a single user, and a single movie. If the user has not yet added a rating for this movie, a new row is added
+            </summary>
+            <remarks>
+            <b>userId</b> is the integer userId for this fictitious user. The in-memory database will automatically add ratings for users from 1-4 here. There is no associated user table to define users (out-of-scope). If a userId does not exist, a new row will be added here. I understand this is not perfect in terms of sniffing out users that do not yet exist, but I ran out of time to add a user table.
+            <b>movieId</b> is the integer movieId for the movies in the system. There are 20 movies seeded in to start (movieId 1-20). 
+            <b>rating</b> is the rating (1-5) you wish to assign to this movie. Integers that are outside of this range will throw a 400 status code, and not affect the database.
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:FwMovieApi.Controllers.MovieController.GetTopFiveFromUser(System.Int32)">
+            <summary>
+            Returns top five movies (in descending order) in terms of average rating, for the user_id you pass in.
+            </summary>
+            <param name="user_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FwMovieApi.Controllers.MovieController.GetTopFive">
+            <summary>
+            Returns top five movies (in descending order) in terms of average rating, for the movie system as a whole.
+            </summary>        
+        </member>
+    </members>
+</doc>

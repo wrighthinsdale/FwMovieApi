@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using FwMovieApi.DbModels;
@@ -29,7 +30,11 @@ namespace FwMovieApi {
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "FwMovieApi", Version = "v1" });
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "FwMovieApi.xml");
+                c.IncludeXmlComments(filePath);
+
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

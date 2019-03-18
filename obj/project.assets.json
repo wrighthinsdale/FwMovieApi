@@ -12644,11 +12644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jwrig\\source\\repos\\FwMovieApi\\FwMovieApi\\FwMovieApi.csproj",
+      "projectUniqueName": "C:\\Projects\\FwMovieApi\\FwMovieApi\\FwMovieApi.csproj",
       "projectName": "FwMovieApi",
-      "projectPath": "C:\\Users\\jwrig\\source\\repos\\FwMovieApi\\FwMovieApi\\FwMovieApi.csproj",
+      "projectPath": "C:\\Projects\\FwMovieApi\\FwMovieApi\\FwMovieApi.csproj",
       "packagesPath": "C:\\Users\\jwrig\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jwrig\\source\\repos\\FwMovieApi\\FwMovieApi\\obj\\",
+      "outputPath": "C:\\Projects\\FwMovieApi\\FwMovieApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

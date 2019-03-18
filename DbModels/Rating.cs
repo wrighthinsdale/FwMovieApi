@@ -6,12 +6,12 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace FwMovieApi.DbModels {
-    public class Movie {
+    public class Rating {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
-        public string title { get; set; }
-        public int yearOfRelease { get; set; }
-        public int runningTime { get; set; }
+        public int userId { get; set; }
+        public long movieId { get; set; }
+        public int rating { get; set; }
     }
 }
