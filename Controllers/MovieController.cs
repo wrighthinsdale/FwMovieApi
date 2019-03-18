@@ -73,7 +73,10 @@ namespace FwMovieApi.Controllers {
                     b => b.id,
                     (a, b) => new { a, b }
                     ).Where(q => movie_id_list.Contains(q.a.movieId)).ToList();
-                var rating_list = _context.Ratings.GroupBy(t => new { movieId = t.movieId }).Select(q => new { Average = q.Average(p => p.rating), q.Key.movieId }).Where(q => movie_id_list.Contains(q.movieId)).ToList();
+                var rating_list = _context.Ratings.GroupBy(
+                    t => new { movieId = t.movieId })
+                    .Select(q => new { Average = q.Average(p => p.rating), q.Key.movieId })
+                    .Where(q => movie_id_list.Contains(q.movieId)).ToList();
                 foreach (MovieItem the_item in r_list) {
                     the_item.genres = String.Join(',', movie_genre_list.Where(q => q.a.movieId == the_item.id).Select(q => q.b.genreName).ToList());
                     the_item.averageRating = Math.Round(rating_list.Where(q => q.movieId == the_item.id).Select(q => q.Average).SingleOrDefault() * 2, MidpointRounding.ToEven) / 2;
@@ -147,7 +150,12 @@ namespace FwMovieApi.Controllers {
                 (a, b) => new { a, b }
                 ).Where(q => movie_id_dict.Keys.Contains(q.a.movieId)).ToList();
             foreach (Movie the_movie in movie_list) {
-                MovieItem new_item = new MovieItem { id = the_movie.id, title = the_movie.title, runningTime = the_movie.runningTime, yearOfRelease = the_movie.yearOfRelease, averageRating = Math.Round(movie_id_dict[the_movie.id] * 2, MidpointRounding.ToEven) / 2 };
+                MovieItem new_item = new MovieItem {
+                    id = the_movie.id,
+                    title = the_movie.title,
+                    runningTime = the_movie.runningTime,
+                    yearOfRelease = the_movie.yearOfRelease,
+                    averageRating = Math.Round(movie_id_dict[the_movie.id] * 2, MidpointRounding.ToEven) / 2 };
                 new_item.genres = String.Join(',', movie_genre_list.Where(q => q.a.movieId == new_item.id).Select(q => q.b.genreName).ToList());
                 r_list.Add(new_item);
             }
